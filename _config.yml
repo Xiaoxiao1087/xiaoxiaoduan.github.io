@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "cn-China"
-title                    : "Hong Kong"
+title                    : "Biography"
 title_separator          : "-"
 name                     : &name "Xiaoxiao DUAN"
 description              : &description "personal description"
