@@ -12,16 +12,14 @@ on:
       - main  # 或者你的默认分支
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3.3.4
-
+      - uses: actions/checkout@v3  # 使用 actions/checkout 的最新版本
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v4
+        uses: ruby/setup-ruby@v1  # 使用 ruby/setup-ruby 的最新版本
         with:
-          ruby-version: '3.1'  # 根据需要设置 Ruby 版本
+          ruby-version: '3.3.4'
 
       - name: Install dependencies
         run: bundle install
