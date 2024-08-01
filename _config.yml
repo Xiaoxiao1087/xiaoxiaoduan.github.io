@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Xiaoxiao DUAN"
-  avatar           : "profile.png"
+  avatar           : "/images/profile.png"
   bio              : "PhD. <br>Digital entrepreneurship"
   location         : "Hong Kong"
   employer         : "The Hong Kong Polytechnic University"
