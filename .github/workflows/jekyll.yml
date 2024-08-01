@@ -19,9 +19,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v4
         with:
-          ruby-version: '3.0'  # 根据需要设置 Ruby 版本
+          ruby-version: '3.1'  # 根据需要设置 Ruby 版本
 
       - name: Install dependencies
         run: bundle install
