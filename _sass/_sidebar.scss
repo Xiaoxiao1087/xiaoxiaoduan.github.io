@@ -7,9 +7,11 @@
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
-
+  background-color: #f4f4f4; /* 侧边栏背景颜色 */
+  border: 1px solid #ddd;     /* 侧边栏边框 */
+  border-radius: 8px;         /* 边框圆角 */
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   @include clearfix();
   margin-bottom: 1em;
 
@@ -20,9 +22,14 @@
             transition: opacity 0.2s ease-in-out;
 
     &:hover {
-      opacity: 1;
+      opacity: 0.8; /* 鼠标悬停时的透明度 */
     }
   }
+
+  @include breakpoint($x-large) {
+    padding-right: 0;
+  }
+}
 
 
   @include breakpoint($x-large) {
